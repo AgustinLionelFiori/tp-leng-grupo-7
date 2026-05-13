@@ -1,0 +1,112 @@
+/*Variables de a paleta de la página*/
+:root {
+    --color-principal: #265fc9;
+    --color-acento: #3da760;
+    --color-fondo: #F7F9FA;
+    --color-texto: #c77f3b;
+    --color-texto-claro: #FFFFFF;
+    --fuente-principal: 'Inter', sans-serif;
+}
+
+/*Reset básico*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos Globales del documento*/
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*Tipografía H*/
+h1{
+    font-size: 2rem;color: var(--color-principal)
+}
+h2{
+    font-size: 1.5rem;color: var(--color-principal)
+}
+h3{
+    font-size: 1.25rem;color: var(--color-acento)
+}
+p{
+    margin-bottom: 1rem;
+}
+
+/*HEADER*/
+header {
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    padding: 1rem 0;
+}
+
+header h1{
+    color: var(--color-texto);
+}
+
+header h2{
+    color: var(--color-acento);
+}
+
+/*NAVEGACIÓN*/
+nav{
+    margin-top: 0.5rem;
+}
+nav a{
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover{
+    color: var(--color-texto-claro)
+    text-decoration: underline;
+}
+
+main{
+    padding: 2rem 0;
+}
+section{
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--color-acento);
+}
+/*FIGURE - IMAGENES*/
+figure{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
+/*LAS IMAGENES DENTRO DE LA GALERIA*/
+figure img{
+    width: 200px;/*ancho fijo en pixeles. Podes usar pocentaje si queres => 100%*/
+    height: 180px;/*ancho fijo en pixeles. Podes usar pocentaje si queres => 100%*/
+    object-fit: cover;/*recorto la imagen manteniendo la propocición*/
+    border-radius: 5px;/*redondeo las esquias de las imagenes*/
+}
+figcaption{
+    grid-column: 1/-1;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+footer{
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer a{
+    color: var(--color-acento)
+}
