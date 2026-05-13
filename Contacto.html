@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conecta Futuro</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./estilos.css">
     </head>
 <body>
      <header>
-         <img src="./Logo_FundAr.jpg" alt="Logo de FundAr" >
-        <h1>Conecta Futuro</h1>
+         <img src="./Imagenes/logo_de_conectar.png" alt="Logo de Conectar" width="200" height="100" loading="lazy">
+        <h1>Conectar Futuro</h1>
         <h2>Tecnología y aprendizaje para construir nuevas oportunidades</h2>
 
         <nav>
@@ -21,8 +24,9 @@
         </nav>
     </header>
     <main>
+        <section>
         <h2>Sumate como voluntari@</h2>
-        <p>Completa el formulario o escribinos a: <a href="mailto:info@fundar.org.ar">info@conectaFuturo.org.ar</a></p>
+        <p>Completa el formulario o escribinos a: <a href="mailto:info@fundar.org.ar">info@conectarFuturo.org.ar</a></p>
         <form action="#" method="post">
             <label for="nombre">Nombre y Apellido:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Ej: Marcos Capo" required>
@@ -36,17 +40,31 @@
             <label for="programa">Programa de interés:</label>
             <select id="programa" name="programa" required>
                 <option value="">Elegir programa...</option>
-                <option value="plc">Primeras Líneas de Código</option>
-                <option value="met">Mujeres en Tecnología</option>
-                <option value="ec">Escuelas Conectadas</option>
+                <option value="plc">Alfabetización Digital</option>
+                <option value="met">Primer Empleo</option>
+                <option value="ec">Ciudadanía Digital Segura</option>
             </select>
             <br>
             <label for="mensaje">Contanos porque queres sumarte!:</label>
-            <textarea name="mensaje" id="mensaje" rows="12" placeholder="Me gustaria unírme porque..."></textarea>
+            <textarea name="mensaje" id="mensaje" rows="3" placeholder="Me gustaria unírme porque..."></textarea>
             <br>
             <button type="submit">Enviar</button>
         </form>
+        </section>
+        <section id="horarios">
+            <h3>Horarios de atención</h3>
+                <dl>
+                    <dt>Lunes a Viernes</dt>
+                        <dd>8:00 a 20:00 hs</dd>
+                    <dt>Sabados</dt>
+                        <dd>10:00 a 16:00 hs</dd>
+                </dl>
+        <p>El conocimiento te espera en nuestros talleres!</p>
+        <section>
+            <h3>Donde nos ubicamos</h3>
+                <ul><strong>Moreno:</strong> Avenida Messi 1812</ul>
+                <ul><strong>Merlo:</strong> Avenida  del Libertador 2903</ul>
+                <ul><strong>San Miguel:</strong> Paunero 3066</ul>
+        </section>
     </main>
-    <footer>
-         <p><small>Conecta Futuro Copyright © 2026</small></p>
-    </footer>
+    <footer><small>Conectar Futuro Copyright © 2026</small></footer>
