@@ -4,27 +4,50 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conectar Futuro</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Estilos/index.css">
     </head>
 <body>
-    <header>
-         <img src="./Imagenes/logo_de_conectar.png" alt="Logo de Conectar" width="200" height="100" loading="lazy">
-        <h1>Conectar Futuro</h1>
-        <h2>Tecnología y aprendizaje para construir nuevas oportunidades</h2>
+<header class="bg-primary text-white">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between p-3 ">
+            <!--Modo flexible cuando es mayor a > 992px esta en horizontal pero si es menor se pone en columnas -->
 
-        <nav>
-            <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
+            <!-- Logo y textos -->
+            <div class="d-flex align-items-center gap-3">
+                <img src="./Imagenes/logoConectar.png" alt="Logo de Conectar" width="100" loading="lazy" id="logo">
 
-            </ul>
-        </nav>
-    </header>
-    <main>
+                <div>
+                    <h1>Conectar Futuro</h1>
+                    <p>Tecnología y aprendizaje</p>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-md">
+            <div class="navbar-nav" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="Index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./programas.html">Programas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
        <section class="Programas">
             <h2>1. Alfabetización Digital</h2>
             <p><strong>Descripción:</strong> Capacitaciones orientadas al mundo laboral, incluyendo herramientas de oficina, comunicación digital y conocimientos básicos de programación.</p>
@@ -44,6 +67,6 @@
             <p><strong>Cómo participar:</strong> Las instituciones interesadas pueden solicitar el taller enviando un correo a <a href="mailto:info@conectarfuturo.org.ar">info@conectarfuturo.org.ar</a>.
         </section>
     </main>
-    <footer><small>Conectar Futuro Copyright © 2026</small></footer>
+    <footer class="bg-secondary p-3 d-flex justify-content-center"><small>Conectar Futuro Copyright © 2026</small></footer>
 </body>
 </html>

@@ -4,71 +4,102 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conectar Futuro</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./Estilos/nosotros.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Estilos/index.css">
     </head>
 <body>
-    <header>
-         <img src="./Imagenes/logo_de_conectar.png" alt="Logo de Conectar" width="200" height="100" loading="lazy">
-        <h1>Conectar Futuro</h1>
-        <h2>Tecnología y aprendizaje para construir nuevas oportunidades</h2>
 
-        <nav>
-            <ul>
-                <li><a href="./Index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./programas.html">Programas</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
 
-            </ul>
-        </nav>
-    </header>
+<header class="bg-primary text-white">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between p-3 ">
+            <!--Modo flexible cuando es mayor a > 992px esta en horizontal pero si es menor se pone en columnas -->
 
-    <section id="nosotros">
+            <!-- Logo y textos -->
+            <div class="d-flex align-items-center gap-3">
+                <img src="./Imagenes/logoConectar.png" alt="Logo de Conectar" width="100" loading="lazy" id="logo">
+
+                <div>
+                    <h1>Conectar Futuro</h1>
+                    <p>Tecnología y aprendizaje</p>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-md">
+            <div class="navbar-nav" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="Index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./programas.html">Programas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="./Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main class="container">
+        <section id="nosotros">
         <h2>Sobre Nosotros</h2>
 
         <h3>Historia</h3>
         <p>La organización nació con el propósito de promover la inclusión tecnológica y educativa en distintos barrios y comunidades. A través de talleres, capacitaciones y actividades comunitarias, busca generar más oportunidades para jóvenes y adultos.</p>
 
         <h3>Valores</h3>
-        <ul>
-            <li><strong>Inclusión:</strong> Inclusión digital para todas las personas.</li>
-            <li><strong>Educación:</strong> Educación accesible y práctica.</li>
-            <li><strong>Compromiso</strong> Trabajo colaborativo con la comunidad.</li>
-            <li><strong>Innovación:</strong> Innovación y aprendizaje constante.</li>
+        <ul class="list-group">
+            <li class="list-group-item"><strong>Inclusión:</strong> Inclusión digital para todas las personas.</li>
+            <li class="list-group-item"><strong>Educación:</strong> Educación accesible y práctica.</li>
+            <li class="list-group-item"><strong>Compromiso</strong> Trabajo colaborativo con la comunidad.</li>
+            <li class="list-group-item"><strong>Innovación:</strong> Innovación y aprendizaje constante.</li>
         </ul>
 
         <h3>Equipo</h3>
-        <ul>
-            <li><strong>Juan Aguilar</strong> - Director General</li>
-            <li><strong>Agustin Fiori</strong> - Coordinador de programas</li>
-            <li><strong>Lucas Coronel</strong> - Instructor de Tecnología</li>
-            <li><strong>Bejamin Galvan</strong> - Responsable de comunicación</li>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Juan Aguilar</strong> - Director General</li>
+            <li class="list-group-item"><strong>Agustin Fiori</strong> - Coordinador de programas</li>
+            <li class="list-group-item"><strong>Lucas Coronel</strong> - Instructor de Tecnología</li>
+            <li class="list-group-item"><strong>Bejamin Galvan</strong> - Responsable de comunicación</li>
         </ul>
     </section>
 
     <section id="datos">
-        <h3>Datos institucionales</h3>
-    <dl>
-        <dt>Nombre</dt>
-        <dd>Conecta Futuro</dd>
-
-        <dt>Año de fundación</dt>
-        <dd>2022</dd>
-
-        <dt>Tipo de organización</dt>
-        <dd>Sin fines de lucro</dd>
-
-        <dt>Ubicación</dt>
-        <dd>Buenos Aires, Argentina</dd>
-
-        <dt>Misión</dt>
-        <dd>Impulsar el acceso a la tecnología y la formación digital para generar igualdad de oportunidades</dd>
-    </dl>
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Datos institucionales</h3>
+                    <dl class="row">
+                        <dt class="col-sm-4">Nombre</dt>
+                        <dd class="col-sm-8">Conectar Futuro</dd>
+                    
+                        <dt class="col-sm-4">Año de fundación</dt>
+                        <dd class="col-sm-8">2022</dd>
+                    
+                        <dt class="col-sm-4">Tipo</dt>
+                        <dd class="col-sm-8">Sin fines de lucro</dd>
+                    
+                        <dt class="col-sm-4">Ubicación</dt>
+                        <dd class="col-sm-8">Buenos Aires, Argentina</dd>
+                    
+                        <dt class="col-sm-4">Misión</dt>
+                        <dd class="col-sm-8">Acceso a educación digital</dd>
+                    </dl>
+                
+                </div>
+            </div>
     </section>
-
-    <footer><small>Conectar Futuro Copyright © 2026</small></footer>
+    </main>
+  
+    <footer class="bg-secondary p-3 d-flex justify-content-center"><small>Conectar Futuro Copyright © 2026</small></footer>
 
 </body>
 </html>
