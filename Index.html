@@ -8,23 +8,22 @@
         <link rel="stylesheet" href="./Estilos/index.css">
     </head>
 <body>
-   <header class="bg-primary text-white">
+    
+   <header id="encabezado">
         <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between p-3 ">
             <!--Modo flexible cuando es mayor a > 992px esta en horizontal pero si es menor se pone en columnas -->
 
             <!-- Logo y textos -->
             <div class="d-flex align-items-center gap-3">
                 <img src="./Imagenes/logoConectar.png" alt="Logo de Conectar" width="100" loading="lazy" id="logo">
-
                 <div>
-                    <h1>Conectar Futuro</h1>
+                    <h1 class="fw-bold">Conectar Futuro</h1>
                     <p>Tecnología y aprendizaje</p>
                 </div>
             </div>
 
             <!-- Menu -->
             <nav class="navbar navbar-expand-md">
-            <div class="navbar-nav" id="menu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="#Inicio">Inicio</a>
@@ -42,54 +41,48 @@
                         <a class="nav-link fw-semibold" href="./Contacto.html">Contacto</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
-    </nav>
+
 </header>
 
     <main class="container">
 
         <section>
-            <img src="./Imagenes/informacion_general.jpg" alt="Banner Bienvenida"class="img-fluid rounded my-1" loading="lazy">
+            <figure class="shadow"><img src="./Imagenes/informacion_general.jpg" alt="Banner Bienvenida"class="img-fluid rounded my-1" loading="lazy"></figure>
             <p>Conectar Futuro es una organización social que trabaja para acercar herramientas tecnológicas y educativas a comunidades con menos acceso a recursos digitales.<br></p>
         </section>
 
         <section>
             <h2><a href="./Contacto.html">Donde podes encontrarnos </a></h2>
             <h3>Contamos con varios centros de capacitación en distintos municipios, podes acercarte a cualquiera sin compromiso alguno!</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td>
-                            <p></p>
-                        </td>            
-                </tfoot>
 
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Centros</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
 
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                  <td>Hola</td>
+                </tr>
+              </tbody>
             </table>
 
         </section>
