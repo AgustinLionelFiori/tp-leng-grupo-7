@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conecta Futuro</title>
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-         <link rel="stylesheet" href="./Estilos/index.css">
+         <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 <body>
-  <header class="bg-primary text-white">
+  <header id="encabezado">
         <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between p-3 ">
             <!--Modo flexible cuando es mayor a > 992px esta en horizontal pero si es menor se pone en columnas -->
 
@@ -43,8 +46,8 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
+            </div>
+            </nav>
 </header>
 
     <main class="container">
@@ -74,7 +77,10 @@
             <br>
             <button type="submit">Enviar</button>
         </form>
+
+
         </section>
+
         <section id="horarios">
             <h3>Horarios de atención</h3>
                 <dl>
@@ -83,8 +89,8 @@
                     <dt>Sabados</dt>
                         <dd>10:00 a 16:00 hs</dd>
                 </dl>
-        <p>El conocimiento te espera en nuestros talleres!</p>
-        <section>
+            <p>El conocimiento te espera en nuestros talleres!</p>
+        
             <h3>Donde nos ubicamos</h3>
                 <ul><strong>Moreno:</strong> Avenida Messi 1812</ul>
                 <ul><strong>Merlo:</strong> Avenida  del Libertador 2903</ul>
@@ -92,3 +98,6 @@
         </section>
     </main>
     <footer class="bg-secondary p-3 d-flex justify-content-center"><small>Conectar Futuro Copyright © 2026</small></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

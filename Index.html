@@ -5,8 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conectar Futuro</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="./Estilos/index.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+
 <body>
     
    <header id="encabezado">
@@ -23,7 +27,7 @@
             </div>
 
             <!-- Menu -->
-            <nav class="navbar navbar-expand-md">
+            <nav class="navbar navbar-expand-md d-flex flex-column flex-md-row align-items-center gap-2">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link fw-semibold" href="#Inicio">Inicio</a>
@@ -41,15 +45,19 @@
                         <a class="nav-link fw-semibold" href="./Contacto.html">Contacto</a>
                     </li>
                 </ul>
+                <div><!--temporal por el momento -->
+                    <button class="btn btn-dark ms-3">Modo Oscuro</button>
+                </div>
+                
             </nav>
+            
         </div>
-
 </header>
 
     <main class="container">
 
         <section>
-            <figure class="shadow"><img src="./Imagenes/informacion_general.jpg" alt="Banner Bienvenida"class="img-fluid rounded my-1" loading="lazy"></figure>
+            <figure class="my-3"><img src="./Imagenes/informacion_general.jpg" alt="Banner Bienvenida"class="img-fluid rounded my-1" loading="lazy"></figure>
             <p>Conectar Futuro es una organización social que trabaja para acercar herramientas tecnológicas y educativas a comunidades con menos acceso a recursos digitales.<br></p>
         </section>
 
@@ -57,36 +65,36 @@
             <h2><a href="./Contacto.html">Donde podes encontrarnos </a></h2>
             <h3>Contamos con varios centros de capacitación en distintos municipios, podes acercarte a cualquiera sin compromiso alguno!</h3>
 
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th scope="col">Centros</th>
-                  <th scope="col">Last</th>
-                  <th scope="col">Handle</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                </tr>
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Municipio</th>
+                <th>Dirección</th>
+                <th>Días de atención</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Merlo</td>
+                <td>Av. Libertador 1250</td>
+                <td>Lunes a Viernes</td>
+            </tr>
+            <tr>
+                <td>Morón</td>
+                <td>Belgrano 450</td>
+                <td>Martes a Sábado</td>
+            </tr>
+            <tr>
+                <td>Ituzaingó</td>
+                <td>Rivadavia 980</td>
+                <td>Lunes a Viernes</td>
+            </tr>
+        </tbody>
+      </table>
+    </section>
+    </main>
 
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>@fat</td>
-                </tr>
-                <tr>
-
-                  <td>Larry the Bird</td>
-                  <td>@twitter</td>
-                  <td>Hola</td>
-                </tr>
-              </tbody>
-            </table>
-
-        </section>
-
-
-    </main> 
     <footer class="bg-secondary p-3 d-flex justify-content-center"><small>Conectar Futuro Copyright © 2026</small></footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
