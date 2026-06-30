@@ -53,7 +53,7 @@
 </header>
 
     <main class="container">
-        <section id="nosotros">
+        <section class="nosotros">
         <h2>Sobre Nosotros</h2>
 
         <h3>Historia</h3>
@@ -68,15 +68,41 @@
         </ul>
 
         <h3>Equipo</h3>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Juan Aguilar</strong> - Director General</li>
-            <li class="list-group-item"><strong>Agustin Fiori</strong> - Coordinador de programas</li>
-            <li class="list-group-item"><strong>Lucas Coronel</strong> - Instructor de Tecnología</li>
-            <li class="list-group-item"><strong>Bejamin Galvan</strong> - Responsable de comunicación</li>
-        </ul>
+        <div class="equipo row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="./Imagenes/logoConectar.png" alt="juanAguilar" width="100px">
+                        <h4 class="card-title">Juan Aguilar</h4>
+                        <p>Directo General</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="./Imagenes/logoConectar.png" alt="lucasCoronel" width="100px">
+                        <h4 class="card-title">Lucas Coronel</h4>
+                        <p>Instructor de Tecnología</p>     
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="./Imagenes/logoConectar.png" alt="bejaminGalvan" width="100px">
+                        <h4 class="card-title">Bejamin Galvan</h4>
+                        <p>Responsable de comunicación</p>     
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <section id="datos">
+    <section class="datos">
             <div class="card">
                 <div class="card-body">
                     <h3 class="card-title">Datos institucionales</h3>
@@ -96,7 +122,6 @@
                         <dt class="col-sm-4">Misión</dt>
                         <dd class="col-sm-8">Acceso a educación digital</dd>
                     </dl>
-                
                 </div>
             </div>
     </section>
