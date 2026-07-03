@@ -51,51 +51,104 @@
 </header>
 
     <main>
-        <section>
-        <h2>Sumate como voluntari@</h2>
-        <p>Completa el formulario o escribinos a: <a href="mailto:info@fundar.org.ar">info@conectarFuturo.org.ar</a></p>
-        <form action="#" method="post" class="form-control">
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Marcos Capo" required>
-            <br>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="Ej: marcoscapo123@gmail.com" required>
-            <br>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 11-1234-5678" required>
-            <br>
-            <label for="programa">Programa de interés:</label>
-            <select id="programa" name="programa" required>
-                <option value="">Elegir programa...</option>
-                <option value="plc">Alfabetización Digital</option>
-                <option value="met">Primer Empleo</option>
-                <option value="ec">Ciudadanía Digital Segura</option>
-            </select>
-            <br>
-            <label for="mensaje">Contanos porque queres sumarte!:</label>
-            <textarea name="mensaje" id="mensaje" rows="3" placeholder="Me gustaria unírme porque..."></textarea>
-            <br>
-            <button type="submit">Enviar</button>
-        </form>
+        <section class="container my-5">
 
+    <div class="row justify-content-center">
+        <div class="col-lg-7">
 
-        </section>
+            <div class="card shadow-lg border-0 rounded-4 p-4">
 
-        <section id="horarios">
-            <h3>Horarios de atención</h3>
-                <dl>
-                    <dt>Lunes a Viernes</dt>
-                        <dd>8:00 a 20:00 hs</dd>
-                    <dt>Sabados</dt>
-                        <dd>10:00 a 16:00 hs</dd>
-                </dl>
-            <p>El conocimiento te espera en nuestros talleres!</p>
-        
-            <h3>Donde nos ubicamos</h3>
-                <ul><strong>Moreno:</strong> Avenida Messi 1812</ul>
-                <ul><strong>Merlo:</strong> Avenida  del Libertador 2903</ul>
-                <ul><strong>San Miguel:</strong> Paunero 3066</ul>
-        </section>
+                <h2 class="text-center mb-3">🙌 Sumate como voluntari@</h2>
+
+                <p class="text-center text-muted mb-4">
+                    Completá el formulario o escribinos a
+                    <a href="mailto:info@conectarFuturo.org.ar">
+                        info@conectarFuturo.org.ar
+                    </a>
+                </p>
+
+                <form action="#" method="post">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">
+                            Nombre y Apellido
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ej: Marcos Capo"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="Ej: marcoscapo123@gmail.com"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">
+                            Teléfono
+                        </label>
+
+                        <input
+                            type="tel"
+                            class="form-control"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="+54 9 11-1234-5678"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="programa" class="form-label">
+                            Programa de interés
+                        </label>
+
+                        <select class="form-select" id="programa" required>
+                            <option selected disabled>Elegir programa...</option>
+                            <option>Alfabetización Digital</option>
+                            <option>Primer Empleo</option>
+                            <option>Ciudadanía Digital Segura</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="mensaje" class="form-label">
+                            Contanos por qué querés sumarte
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            id="mensaje"
+                            rows="5"
+                            placeholder="Me gustaría unirme porque..."></textarea>
+                    </div>
+
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg" type="submit">
+                            Enviar solicitud
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
     </main>
     <footer class="bg-secondary p-3 d-flex justify-content-center"><small>Conectar Futuro Copyright © 2026</small></footer>
     <script src="js/main.js"></script>
