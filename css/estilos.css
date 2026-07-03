@@ -2,91 +2,161 @@
     --color-primario: #1E3A8A;
     --color-secundario: #3B82F6;
     --color-acento: #F97316;
-    --color-fondo: #ffffff;
+    --color-fondo: #FFFFFF;
     --color-texto: #1F2937;
     --color-texto-secundario: #6B7280;
-
 }
 
-*{/*Reset basico*/
-    margin: 0px;
-    padding: 0px;
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
     font-family: "Montserrat", sans-serif;
     background-color: var(--color-fondo);
     color: var(--color-texto);
 }
 
-/*Tipografía*/
+/* ========================= */
+/* TIPOGRAFÍA */
+/* ========================= */
+
 h2{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
 h3{
-    margin-top: 0.5rem;
+    margin-top: .5rem;
     margin-bottom: 1rem;
 }
+
 p{
     margin-bottom: 1rem;
 }
 
-/*HEADER*/
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.encabezado{
+    background-color: var(--color-primario);
+}
+
 .logo{
     max-width: 100px;
+    transition: transform .3s;
 }
 
 .logo:hover{
     transform: scale(1.05);
 }
 
-.encabezado{
-    background-color: var(--color-primario);
-}
-
 .encabezado h1{
     color: var(--color-fondo);
 }
+
 .encabezado p{
     color: var(--color-secundario);
 }
+
 .encabezado .nav-link{
     color: var(--color-fondo);
 }
+
 .encabezado .nav-link:hover{
     color: var(--color-acento);
 }
 
-/*Contenido*/
-main{/*contenido centrado*/
+/* ========================= */
+/* CONTENIDO */
+/* ========================= */
+
+main{
     max-width: 1100px;
     margin: auto;
+    padding: 1rem;
 }
+
 section{
     margin-bottom: 3rem;
 }
 
-ul li {
-    margin-bottom: 0.5rem;
+ul li{
+    margin-bottom: .5rem;
 }
 
-dt {
+dt{
     font-weight: bold;
     color: var(--color-secundario);
 }
 
-dd {
+dd{
     margin-bottom: 1rem;
 }
 
-/*Formulario texto area limite de tamaño*/
-textarea{
-    width:100%;
-    padding:10px;
-    margin-bottom:10px;
+/* ========================= */
+/* FORMULARIO */
+/* ========================= */
+
+.card{
+    border-radius: 20px;
 }
+
+.card h2{
+    color: var(--color-secundario);
+    font-weight: 700;
+}
+
+.form-label{
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+.form-control,
+.form-select{
+    border-radius: 12px;
+    padding: 12px;
+    transition: .3s;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 10px rgba(59,130,246,.25);
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.btn-primary{
+    border-radius: 12px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-primary:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(59,130,246,.35);
+}
+
+/* ========================= */
+/* BOTÓN MODO OSCURO */
+/* ========================= */
 
 .modo-oscuro{
     background-color: var(--color-texto);
@@ -95,14 +165,17 @@ textarea{
     height: 50px;
     padding: 0;
     font-size: 1.6rem;
-    margin-bottom: 0.7rem;/*En pantalla grande queda desalineado la luna con las letras por eso*/
+    margin-bottom: .7rem;
 }
 
 .modo-oscuro:hover{
-   background-color: var(--color-texto-secundario);
+    background-color: var(--color-texto-secundario);
 }
 
-/*card de nosotros*/
+/* ========================= */
+/* TARJETAS - NOSOTROS */
+/* ========================= */
+
 .equipo .card-body{
     background-color: var(--color-texto);
     color: var(--color-fondo);
@@ -111,4 +184,3 @@ textarea{
 .equipo h4{
     color: var(--color-secundario);
 }
-
