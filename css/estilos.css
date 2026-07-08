@@ -206,3 +206,17 @@ body.dark-mode .list-group-item{
     background-color: var(--color-texto-secundario);
     border: 0;
 }
+
+/**/
+
+.programas{
+    padding: 2rem;
+    border-radius: 2rem;
+    border: var(--color-texto) solid 2px;
+}
+
+.dark-mode .programas{
+    padding: 2rem;
+    border-radius: 2rem;
+    border: var(--color-fondo) solid 2px;
+}
