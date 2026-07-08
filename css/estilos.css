@@ -156,18 +156,6 @@ textarea{
 }
 
 /* ========================= */
-/* BOTÓN MODO OSCURO */
-/* ========================= */
-#btn-modo-oscuro {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 5px 10px;  
-    border-radius: 5px;
-}
-
-/* ========================= */
 /* TARJETAS - NOSOTROS */
 /* ========================= */
 
@@ -183,7 +171,7 @@ textarea{
 
 /*Modo oscuro*/
 
-.dark-mode .card{
+body.dark-mode .card{
     background-color: var(--color-texto-secundario);
     color: var(--color-fondo);
 }
@@ -218,7 +206,7 @@ body.dark-mode .list-group-item{
     border: var(--color-texto) solid 2px;
 }
 
-.dark-mode .programas{
+body.dark-mode .programas{
     border: var(--color-fondo) solid 2px;
 }
 
