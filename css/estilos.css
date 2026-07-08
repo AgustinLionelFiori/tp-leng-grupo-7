@@ -219,8 +219,6 @@ body.dark-mode .list-group-item{
 }
 
 .dark-mode .programas{
-    padding: 2rem;
-    border-radius: 2rem;
     border: var(--color-fondo) solid 2px;
 }
 
